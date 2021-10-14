@@ -1,0 +1,126 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ---------------Responsive Images----------------- */
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ---------------Utility Classes----------------- */
+
+.container{
+  width:85vw;
+  margin: 40px auto;
+  max-width:900px;
+}
+
+body{
+  font-family: 'Indie Flower', sans-serif;
+  margin:0;
+  line-height:1.5;
+}
+
+header.primary{
+  background:#6a5acd;
+  text-align:center;
+  color:#ffffff;
+  text-shadow: 1px 1px #000000;
+  /* T,R,B,L */
+  padding:40px 40px 20px 40px;
+}
+
+header.primary h1{
+  font-size:45px;
+}
+
+header.primary h1 a{
+  color:#f0e68c;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size: 27px;
+}
+
+header.primary nav{
+  background:#d8bfd8;
+  width:80vw;
+  margin:20px auto;
+  max-width:1040px;
+}
+header.primary nav ul{
+  text-decoration:none;
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+}
+
+header.primary nav ul li a{
+  color:#191970;
+  text-decoration:none;
+  background-color:#ffffff;
+  padding:4px 14px;
+  border-radius: 15px;
+  transition:.2s;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active{
+  background-color:rgba(0,0,0,.6)
+}
+
+#intro{
+  border-bottom:1px dashed #4b0082;
+  padding-bottom:1rem;
+}
+
+#intro h2{
+  color:#f08080;
+}
+
+#intro p{
+  
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+/* Media Query Example */
+
+@media screen and (max-width:590px) {
+  
+  header.primary nav ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    margin:0 auto;
+    width:50vw;
+  }
+  
+  header.primary nav a{
+    display:block;
+  }
+  
+  header.primary nav li{
+    margin-bottom:10px;
+  }
+  
+  
+}
