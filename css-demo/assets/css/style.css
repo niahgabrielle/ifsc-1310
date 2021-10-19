@@ -102,6 +102,48 @@ header.primary nav a:active{
   justify-content:space-around;
 }
 
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0,.3);
+  padding:3%;
+  font-size:13px;
+  border-radius:15px;
+  transition:.7s;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.5);
+}
+
+article.post figure{
+  margin:0;
+}
+
+article.post time, article.post figcaption, article.post .post-meta{
+  font-size:12px;
+  text-transform:uppercase;
+  color:#8a2be2;
+}
+
+article.post img{
+  border-radius:15px;
+}
+
+article.post a{
+    color:#f08080;
+}
+
+article.post a:hover, article.post a:active{
+  text-decoration:none;
+}
+
+/*Attribute Selectors*/
+aside[role="complementary"]{
+  background-color:#6a5acd;
+  color:#fff;
+  padding:5px;
+}
+
 /* Media Query Example */
 
 @media screen and (max-width:590px) {
