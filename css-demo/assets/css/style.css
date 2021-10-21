@@ -23,6 +23,95 @@ img{
   max-width:900px;
 }
 
+.img-right{
+  float:right;
+  border:3px solid khaki;
+  padding:5px 5px 20px 5px;
+}
+
+table{
+  width:100%;
+  border:2px solid palevioletred;
+  border-collapse:collapse;
+}
+
+table tr:nth-child(even){
+  background-color:thistle;
+  color:white;
+}
+
+table tr:hover{
+  color:violet;
+}
+
+table td{
+  border:2px solid palevioletred;
+  padding:4px;
+}
+
+table th{
+  background-color:mediumpurple;
+  color:white;
+  width:35%;
+  padding:7px;
+}
+
+table caption{
+  color:indigo;
+  padding:8px;
+  font-weight:bold;
+  font-size:30px;
+}
+
+#additional-elements ol{
+  list-style-type:decimal;
+}
+
+#additional-elements ul{
+  list-style-type:circle;
+}
+
+#additional-elements ul ul{
+  list-style-type:square;
+}
+
+#additional-elements dl{
+  
+}
+
+#additional-elements dt{
+  font-weight:bold;
+  font-size:17px;
+  margin-top:20px;
+}
+
+#additional-elements dd{
+  margin:0;
+}
+
+/* Adjacent Sibling Combinator*/
+
+dd + dt{
+  margin-top:20px;
+}
+
+blockquote{
+  background:palevioletred;
+  padding: 20px 30px;
+  border:5px double slateblue;
+  border-radius:15px;
+  font-size:17px;
+  color:white;
+}
+
+blockquote cite{
+  display:block;
+  text-align:right;
+  font-weight:bold;
+  font-size:12px;
+  padding-top:10px;
+}
+
 body{
   font-family: 'Indie Flower', sans-serif;
   margin:0;
@@ -30,9 +119,11 @@ body{
 }
 
 header.primary{
-  background:#6a5acd;
+  background:slateblue;
+  background-color:#e5dbe4;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23cc3939' fill-opacity='0.20'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
   text-align:center;
-  color:#ffffff;
+  color:orchid;
   text-shadow: 1px 1px #000000;
   /* T,R,B,L */
   padding:40px 40px 20px 40px;
@@ -43,16 +134,16 @@ header.primary h1{
 }
 
 header.primary h1 a{
-  color:#f0e68c;
+  color:mediumpurple;
   text-decoration:none;
 }
 
 header.primary h2{
-  font-size: 27px;
+  font-size:27px;
 }
 
 header.primary nav{
-  background:#d8bfd8;
+  background:thistle;
   width:80vw;
   margin:20px auto;
   max-width:1040px;
@@ -70,7 +161,7 @@ header.primary nav ul li{
 }
 
 header.primary nav ul li a{
-  color:#191970;
+  color:midnightblue;
   text-decoration:none;
   background-color:#ffffff;
   padding:4px 14px;
@@ -84,12 +175,12 @@ header.primary nav a:active{
 }
 
 #intro{
-  border-bottom:1px dashed #4b0082;
+  border-bottom:1px dashed indigo;
   padding-bottom:1rem;
 }
 
 #intro h2{
-  color:#f08080;
+  color:lightcoral;
 }
 
 #intro p{
@@ -122,7 +213,7 @@ article.post figure{
 article.post time, article.post figcaption, article.post .post-meta{
   font-size:12px;
   text-transform:uppercase;
-  color:#8a2be2;
+  color:blueviolet;
 }
 
 article.post img{
@@ -130,18 +221,63 @@ article.post img{
 }
 
 article.post a{
-    color:#f08080;
+    color:palevioletred;
 }
 
 article.post a:hover, article.post a:active{
   text-decoration:none;
 }
 
+#additional-elements h2{
+  color:#000000;
+  border-bottom:2px dotted #da70d6;
+}
+
+#additional-elements a:link, #additional-elements a:visited{
+  color:mediumpurple;
+}
+
+#additional-elements a:hover, #additional-elements a:active{
+  text-decoration:none;
+}
+
 /*Attribute Selectors*/
+
 aside[role="complementary"]{
-  background-color:#6a5acd;
-  color:#fff;
+  background-color:#db7093;
+  color:white;
   padding:5px;
+}
+
+aside .container{
+  display:flex;
+  justify-content:space-between;
+}
+
+aside article.widget{
+  width:45%;
+}
+
+aside a:link{
+  color:white;
+  display:block;
+}
+
+aside article.widget footer{
+  display:none;
+}
+
+#colophon{
+  background-color:khaki;
+}
+
+#colophon h6{
+  padding:7px;
+  margin:0;
+  text-align:center;
+  font-size:15px;
+  text-transform:capitalize;
+  text-shadow: 0px 2px #000000;
 }
 
 /* Media Query Example */
@@ -158,11 +294,11 @@ aside[role="complementary"]{
   
   header.primary nav a{
     display:block;
+    margin-top:15px;
   }
   
   header.primary nav li{
     margin-bottom:10px;
   }
-  
   
 }
