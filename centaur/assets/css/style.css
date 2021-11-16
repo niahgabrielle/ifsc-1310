@@ -1,0 +1,15 @@
+body{
+  font-family: 'Mohave', sans-serif;
+  background-color:white;
+  color:black;
+}
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
