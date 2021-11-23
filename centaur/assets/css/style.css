@@ -12,4 +12,38 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+  }
+  
+  .img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 10px;
+}
+
+header.primary {
+  background-color: #181c1f;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  /* Shorhand T,R,B,L*/
+  padding: 6em 2em;
+  position: relative;
 }
